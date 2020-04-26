@@ -16,7 +16,7 @@ library(dplyr)
 
 #Paths to loop over 
 jpegpaths <- 
-    as.data.frame(drive_ls("https://drive.google.com/drive/u/0/folders/1vUhW32OZ78YELqNRgGgte3U7rCzob06t"))
+    as.data.frame(drive_ls("https://drive.google.com/open?id=1vUhW32OZ78YELqNRgGgte3U7rCzob06t"))
 
 jpegpaths <- jpegpaths %>%
     separate(name, into = c("pdfnum", "page"), sep = " - 1985 ", extra = "merge") %>%
